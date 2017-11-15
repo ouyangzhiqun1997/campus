@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Message3</string>
+    <string name="renewsfragment">最近消息</string>
+    <string name="username">小黑</string>
+    <string name="userID">Dedgoss</string>
+    <string name="Mail">男</string>
+    <string name="Beijing">China Beijing</string>
+    <string name="whatsup">Good Luck,Have Fun!</string>
+
+
+
+    <string name="ProfilePhoto">个人照片</string>
+    <string name="Name">名字</string>
+    <string name="NameId">个人账号</string>
+    <string name="QRcode">我的二维码</string>
+    <string name="Gender">性别</string>
+    <string name="Rdgion">地区</string>
+    <string name="WhatsUP">个性签名</string>
+
+
+</resources>

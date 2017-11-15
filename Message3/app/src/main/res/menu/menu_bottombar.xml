@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_news"
+        android:orderInCategory="1"
+        android:title="消息"
+        android:icon="@drawable/news_"
+        android:text="页面1"/>
+    <item
+        android:id="@+id/menu_recent"
+        android:orderInCategory="2"
+        android:title="最近"
+        android:icon="@drawable/recent_news_"
+        android:text="页面2"/>
+    <item
+        android:id="@+id/menu_me"
+        android:orderInCategory="3"
+        android:title="我"
+        android:icon="@drawable/me_"
+        android:text="页面3"/>
+</menu>
