@@ -77,37 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    //向服务器发送请求
-    private class RequestThread implements Runnable{
-
-        @Override
-        public void run() {
-            //因为选择POST方法，所以new HttpPost对象，构造方法传入处理请求php文件的url
-            HttpPost httpRequest = new HttpPost("http://47.94.201.24");
-            //POST方法的参数列表
-            ArrayList<BasicNameValuePair> params = new ArrayList<BasicNameValuePair>();
-            //添加名为userName的参数，值为giantpoplar
-            params.add(new BasicNameValuePair("userName", "haoxingxing"));
-
-            try {
-                //设置请求实体，设定了参数列表
-                httpRequest.setEntity(new UrlEncodedFormEntity(params, HTTP.UTF_8));
-                //执行请求,等待服务器返回结果
-                HttpResponse httpResponse = new DefaultHttpClient().execute(httpRequest);
-                //log出http返回报文头
-                Log.e("status",httpResponse.getStatusLine().toString());
-                //判断返回码是否为200，200表示请求成功
-                if (httpResponse.getStatusLine().getStatusCode() == 200) {
-                    //获取返回字符串
-                    strResult = EntityUtils.toString(httpResponse.getEntity(), HTTP.UTF_8);
-                    Log.d("线程","启动线程");
-                }
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-
-    }
+    
 
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
